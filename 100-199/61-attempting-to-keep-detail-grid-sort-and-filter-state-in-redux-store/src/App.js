@@ -110,7 +110,9 @@ class App extends Component {
             ]}
             masterDetail={true}
             detailCellRendererFramework={MyDetailCellRenderer}
+            keepDetailRows
             detailCellRendererParams={{
+              suppressRefresh: true,
               rowData: this.props.rowData,
               setSortModel: this.props.onSetSortModel,
               setFilterModel: this.props.onSetFilterModel
